@@ -1,9 +1,11 @@
-import Todo from "./components/Todo";
+// import Todo from "./components/Todo";
+import Figmaa from "./lesson2/Lsson2"
 
 function App() {
   return (
     <div className="App">
-      <Todo/>
+      {/* <Todo/> */}
+      <Figmaa/>
     </div>
   );
 }

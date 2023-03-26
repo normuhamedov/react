@@ -65,6 +65,11 @@ const getInputId = (e) => {
     const deleteItem = todo.filter((item) => item.id !== id);
     setTodo(deleteItem);
   }
+  const userEdit = (id => {
+    const editItem = todo.filter((item) =>item.id == id)
+    setTodo(editItem);
+  })
+
 
   return (
     <div>
@@ -72,14 +77,15 @@ const getInputId = (e) => {
 
         <table>
             <thead>
-                <tr className="table_row">
+                <tr className="table_row" >
                     <th>ID</th>
                     <th>First name</th>
                     <th>Last name</th>
                     <th>Username</th>
                     <th>Age</th>
                     <th>Salary</th>
-                    <th>Delete</th>
+                    <th>Edit</th>
+                    <th>Delate</th>
                 </tr>
             </thead>
 
@@ -93,6 +99,9 @@ const getInputId = (e) => {
                             <td> {element.uName}</td>
                             <td> {element.age}</td>
                             <td> {element.salary}</td>
+                            <td>
+                              <button className="edit_btn" onClick={() => userEdit(element.id)}>edit</button>
+                            </td>
                             <td>  
                                 <button className="delete_btn" onClick={() => userDelete(element.id)}>
                                 Delate
