@@ -95,7 +95,7 @@ const getInputId = (e) => {
                             <td> {element.salary}</td>
                             <td>  
                                 <button className="delete_btn" onClick={() => userDelete(element.id)}>
-                                D
+                                Delate
                                 </button>
                             </td>
                         </tr>

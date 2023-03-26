@@ -11,57 +11,15 @@
     margin: 0 auto;
     margin-top: -80px
 }
-.navbar{
-    background-color:rgb(5, 98, 160);
-    height: 9vh;
-    width: 100%;
-    padding-top:10px;
-    position: relative;
-    position: fixed;
-    z-index: 2;
+table {
+    color: gold;
+    background-color: dimgray;
 }
-.navbar__elements{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.burger{
-    margin-top: 10px;
-}
-.burger:hover{
-    cursor: pointer;
-}
-.burger_line{
-    width:30px;
-    height: 3px;
-    margin-bottom: 7px;
-    background-color: rgb(223, 223, 223);
-    border: none;
-}
-.navbar_title{
-    color: rgb(223, 223, 223);
-    font-size: 30px;
-}
-.navbar_link{
-    color: rgb(223, 223, 223);
-    font-size: 20px;
-    font-weight: 600;
-    width: 150px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-}
-.navbar_link:hover{
-    border: 2px solid rgb(223, 223, 223) ;
-    border-radius: 25px;
-    transition: all 0.5s;
-}
+
 .todo_title{
     font-size: 60px;
     font-weight: 600;
-    color: rgb(5, 98, 223);
+    color: rgb(19, 223, 5);
     text-align: center;
     margin-top: 70px;
 }
@@ -72,13 +30,18 @@
     align-items: center;
     width:100%;
     margin-bottom: 20px;
+    
+}
+body {
+    background-color: dimgray;
 }
 .crudActive{
     transform: translateY(0);
     transition: all 0.5s
+    
 }
 .form{
-    background-color: rgb(73, 142, 232);
+    // background-color: rgb(73, 232, 84);
     padding: 30px 40px;
     margin-top: 30px;
     display: flex;
@@ -91,7 +54,7 @@
     height: 45px;
     margin-bottom: 15px;
     padding: 10px;
-    border: 2px solid rgb(47, 134, 255);
+    border: 2px solid rgb(255, 47, 47);
     border-radius: 10px;
     font-size: 18px;
     font-weight: 600;
@@ -107,15 +70,12 @@
     transition: all 0.5s ease;
 }
 .delete_btn{
-    border: none;
-    background-color: #ffffff00;
+    border: 1px solid red;
+    border-radius: 3px;
+    background-color: royalblue;
 }
 .delete_btn:hover{
-    cursor: pointer;
-}
-.delete-btn-img{
-    width: 30px;
-    height: 35px;
+    background-color: red;
 }
 table {
     border-collapse: collapse;
@@ -131,6 +91,3 @@ th{
     font-size: 20px;
 }
 
-tr:hover {
-    background-color: #f5f5f5;
-}
