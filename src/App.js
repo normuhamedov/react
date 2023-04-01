@@ -1,11 +1,12 @@
 // import Todo from "./components/Todo";
-import Figmaa from "./lesson2/Lsson2"
-
+// import Figmaa from "./lesson2/Lsson2"
+import Twitter from "./twitter/About"
 function App() {
   return (
     <div className="App">
-      {/* <Todo/> */}
-      <Figmaa/>
+      <Twitter/>
+      {/* <Figmaa/> */}
+      
     </div>
   );
 }
